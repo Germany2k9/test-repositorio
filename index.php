@@ -10,6 +10,35 @@
 <?php
  echo 'Hola mundo XXXDDDXXDD' ;
  
-  ?>    
+  ?>  
+
+  <?php
+    $numero= array();
+for ($i=0; $i < 15; $i++) { 
+  # code...
+  array_push($numero, "Elemento ". $i );
+}
+   print_r($numero);
+  
+   foreach($numero as $valor){
+     echo($valor."<br>");
+   }
+  
+  ?> 
+  <?php $texto="";
+
+    if(empty($texto)){
+      $texto ="this is a test de texto";
+      $textoMayuscula= strtoupper($texto);
+      echo $textoMayuscula; 
+    }else{
+      echo $texto;
+    }
+  
+  
+  
+  
+  ?>
+  
 </body>
 </html>
